@@ -3,8 +3,9 @@ from flask_cors import CORS
 from services import downloader
 
 app = Flask(__name__)
+CORS(app)
 
-@app.route("/api/downloader", methods=["POST"])
+@app.route("/download", methods=["POST"])
 def download_videos():
 
     dados = request.get_json()
