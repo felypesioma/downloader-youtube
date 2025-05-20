@@ -1,5 +1,8 @@
 import './App.css';
 import { useState } from 'react';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { faMagnifyingGlass } from '@fortawesome/free-solid-svg-icons';
+
 
 function App() {
   const [link, setLink] = useState("");
@@ -45,7 +48,6 @@ function App() {
       <main>
         <div className="container">
           <div className="form">
-            <h2>Download Youtube Videos</h2>
             <form onSubmit={enviar}>
               <input
                 type="text"
@@ -54,7 +56,7 @@ function App() {
                 onChange={(e) => setLink(e.target.value)}
                 required
               />
-              <button type="submit">Baixar</button>
+              <button className='button-search' type="submit"><FontAwesomeIcon icon={faMagnifyingGlass} /></button>
             </form>
 
             {carregando && <p>Baixando vídeo... aguarde</p>}

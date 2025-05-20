@@ -1,0 +1,66 @@
+*{
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+header{
+    display: flex;
+    width: 100%;
+    height: 4rem;
+    justify-content: center;
+}
+
+.container{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    margin-top: 3.5rem;
+}
+
+form{
+    display: flex;
+    gap: 1rem;
+    align-items: center;
+}
+
+form input{
+    height: 2rem;
+    width: 30rem;
+}
+
+.button-search{
+    width: 2.5rem;
+    height: 2.5rem;
+    color: white;
+    background-color: blue;
+    border-radius: 10px;
+}
+
+.button-search:hover{
+    cursor: pointer;
+}
+
+.box-thumb{
+    display: flex;
+    margin-top: 1rem;
+    flex-direction: column;
+    align-items: center;
+}
+
+.titulo-video{
+    margin-top: 1rem;
+    font-weight: bolder;
+}
+
+a{
+    padding: 1rem;
+    background-color: blue;
+    border-radius: 5px;
+    margin-top: 1rem;
+    font-weight: bold;
+    text-decoration: none;
+    color: white;
+}
+
+img{
+    width: 32.5rem;
+}
